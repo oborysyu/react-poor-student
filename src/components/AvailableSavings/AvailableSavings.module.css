@@ -1,0 +1,36 @@
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    border: 1px solid rgb(112, 71, 235);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+.lbl {
+    color: rgb(129, 89, 237);
+    font-size: large;
+    font-weight: 1000;
+}
+.resultitem {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    /* color: rgb(129, 89, 237); */
+    background-color: #c6b6f7;
+    border: 1px solid #5523e7ff;
+    border-radius: 8px;
+    font-size: xx-large;
+    font-weight: 1000;
+}
+.negative {
+    color: rgb(255, 3, 3);
+}
+.positive {
+    color: rgb(3, 144, 3);
+}

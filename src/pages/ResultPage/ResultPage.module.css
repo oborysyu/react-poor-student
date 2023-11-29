@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+.rates {
+    display: flex;
+    flex-direction: column;
+}

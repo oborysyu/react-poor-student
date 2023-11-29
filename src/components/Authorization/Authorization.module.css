@@ -1,0 +1,92 @@
+.bg {
+  background-image: url("./../../assets/futuristic-abstract-background-with-circular-shapes-min.jpg");
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
+}
+.Auth_form_container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.Auth_form {
+  width: 350px;
+  position: relative;
+}
+.Auth_form .form_field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #ffffff;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Auth_form .form_field:nth-child(1)::before {
+  background-image: url(./../../assets/loginpage-user-icon.png);
+  width: 20px;
+  height: 20px;
+  top: initial;
+}
+.Auth_form .form_field:nth-child(2)::before {
+  background-image: url(./../../assets/loginpage-lock-icon.png);
+  width: 16px;
+  height: 16px;
+  top: initial;
+}
+.Auth_form .form_field {
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.Auth_form input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgb(229, 231, 235);
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  /* color: rgb(229, 231, 235); */
+  text-indent: 40px;
+}
+.button {
+  transition: all .5s ease;
+  background-color: #c6b6f7;
+  width: 100%;
+  color: #5523e7ff;
+  font-weight: bold;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  color: #c6b6f7;
+  background-color: #5523e7ff;
+  letter-spacing: 5px;
+}

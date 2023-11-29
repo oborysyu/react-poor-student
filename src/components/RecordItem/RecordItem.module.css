@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 10fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 5px;
+  border: 1px solid rgb(112, 71, 235);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+.removebtn {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: end;
+  color: rgb(255, 3, 3);
+}
+.value {
+  text-align: end;
+}
+.income {
+  color: rgb(3, 144, 3);
+}
+.expense {
+  color: rgb(255, 3, 3);
+}

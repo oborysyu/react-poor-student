@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.row {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+.input {
+  font-family: inherit;
+  width: 100%;
+  padding: 0.9rem 0.7rem;
+  border: 1px solid rgb(216, 216, 221);
+  border-radius: 8px;
+}
+.input:focus {
+  outline: none !important;
+  border: 1px solid rgb(112, 71, 235);
+}
+.income {
+  color: rgb(3, 144, 3);
+}
+.expense {
+  color: rgb(255, 3, 3);
+}
+.button {
+  transition: all 0.5s ease;
+  background-color: rgb(112, 71, 235);
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(129, 89, 237);
+}
