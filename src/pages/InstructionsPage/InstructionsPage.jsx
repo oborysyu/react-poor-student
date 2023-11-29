@@ -1,7 +1,6 @@
 import styles from "./InstructionsPage.module.css";
 
 function InstructionsPage() {
-
   return (
     <div className={styles.container}>
       <p>

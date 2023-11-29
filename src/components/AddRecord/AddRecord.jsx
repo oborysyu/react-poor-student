@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { addRecord } from "../../store/financeSlice";
 import styles from "./AddRecord.module.css";
 
-function AddRecord(props) {
+function AddRecord() {
   let defaultDate = new Date().toISOString().substring(0, 10);
   const [date, setDate] = useState(defaultDate);
   const [amount, setAmount] = useState("");
@@ -13,7 +13,7 @@ function AddRecord(props) {
   const dispatch = useDispatch();
 
   const addFinancialData = () => {
-    if(!amount.length) return;
+    if (!amount.length) return;
     dispatch(
       addRecord({
         date: date,

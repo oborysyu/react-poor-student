@@ -1,12 +1,10 @@
+import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
-import "./Navbar.css";
-import { useDispatch, useSelector } from "react-redux";
-import { logOut } from "../../store/userSlice";
 import Logo from "../../assets/loan.png";
-
+import { logOut } from "../../store/userSlice";
+import "./Navbar.css";
 
 const Navbar = () => {
-
   const navigate = useNavigate();
   const handleExit = () => {
     dispatch(logOut());
@@ -15,7 +13,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   return (
     <div className="nav-bar">
-      <img src={Logo} className="logo"/>
+      <img src={Logo} className="logo" />
       <div className="nav-bar-links">
         <li>
           <NavLink
@@ -58,7 +56,9 @@ const Navbar = () => {
           </NavLink>
         </li>
       </div>
-      <li className="exit-btn" onClick={handleExit}>Exit</li>
+      <li className="exit-btn" onClick={handleExit}>
+        Exit
+      </li>
     </div>
   );
 };

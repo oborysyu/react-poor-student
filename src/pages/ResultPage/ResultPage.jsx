@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import AvailableSavings from "../../components/AvailableSavings/AvailableSavings";
+import FinanceTable from "../../components/FinanceTable/FinanceTable";
 import { bank_url } from "../../config";
 import styles from "./ResultPage.module.css";
-import FinanceTable from "../../components/FinanceTable/FinanceTable";
 
-function ResultPage(props) {
+function ResultPage() {
   const [euroRate, setEuroRate] = useState(0);
   const [dollarRate, setDollarRate] = useState(0);
-  const [totalResult, setTotalResult] = useState(0);
 
   const [list] = useSelector((state) => {
     const { finance } = state;
@@ -43,7 +42,7 @@ function ResultPage(props) {
         dollarRate={dollarRate}
         result={getResult()}
       />
-      <FinanceTable data={list} euroRate={euroRate} dollarRate={dollarRate}/>
+      <FinanceTable data={list} euroRate={euroRate} dollarRate={dollarRate} />
     </div>
   );
 }

@@ -2,8 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   financialRecords: [],
-  //   incomes:[],
-  //   expenses:[],
 };
 
 const financeSlice = createSlice({

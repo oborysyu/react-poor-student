@@ -11,7 +11,14 @@ function RecordItem(props) {
     <div className={styles.container}>
       <div>{item.date}</div>
       <div>{item.text}</div>
-      <div className={`${styles.value} ${item.isIncome ? styles.income : styles.expense}`}>{isIncomeSign}{parseFloat(item.amount).toFixed(2)}</div>
+      <div
+        className={`${styles.value} ${
+          item.isIncome ? styles.income : styles.expense
+        }`}
+      >
+        {isIncomeSign}
+        {parseFloat(item.amount).toFixed(2)}
+      </div>
       <div
         className={styles.removebtn}
         onClick={() => dispatch(removeRecord(item))}
